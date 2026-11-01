@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SahuFlix| Premium Movie Collection</title>
+    <link rel="shortcut icon" href="logo.png" type="logo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-play-circle"></i>
+                    SahuFlix
+                </a>
+                
+                <div class="nav-links">
+                   <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="tvshows.html">TV Shows</a></li>
+                    <li><a href="movies.html">New & Popular</a></li>
+                    <li><a href="profile.html">My List</a></li>
+
+                    
+                    
+                </div>
+                
+                <div class="search-container">
+                    <input type="text" placeholder="Search movies...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Last Adventure</h1>
+            <div class="hero-meta">
+                <span><i class="fas fa-star"></i> 4.8/5</span>
+                <span><i class="fas fa-calendar"></i> 2023</span>
+                <span><i class="fas fa-clock"></i> 2h 15m</span>
+                <span><i class="fas fa-ticket-alt"></i> Action, Adventure</span>
+            </div>
+            <p class="hero-description">
+                In a world where secrets are currency, one agent must uncover the truth behind a global conspiracy that threatens to destroy everything he holds dear. A thrilling adventure with breathtaking visuals and non-stop action.
+            </p>
+            <div class="hero-actions">
+                <button class="btn" id="watchNowHero"><i class="fas fa-play"></i> Watch Now</button>
+                <button class="btn btn-outline" id="addToPlaylistHero"><i class="fas fa-plus"></i> Add to Playlist</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trending Movies</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Action</button>
+                <button class="filter-btn">Drama</button>
+                <button class="filter-btn">Sci-Fi</button>
+                <button class="filter-btn">Comedy</button>
+                <button class="filter-btn">Thriller</button>
+            </div>
+            
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="./img/1920-v.webp" alt="1920">
+                        <div class="movie-rating">8.7</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">1920</h3>
+                        <div class="movie-meta">
+                            <span>2022</span>
+                            <span>2h 16m</span>
+                        </div>
+                        <p class="movie-description">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-outline watch-now-btn" data-movie="1920"><i class="fas fa-play"></i> Watch</button>
+                            <button class="action-btn add-playlist-btn" data-movie="1920"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="./img/ma-v.webp" alt="moving in with malaika">
+                        <div class="movie-rating">7.8</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Moving in with Malaika</h3>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>1h 55m</span>
+                        </div>
+                        <p class="movie-description">Thes movie Moving in with Malaikaelite thieves plan the most ambitious heist in history, targeting three major casinos simultaneously.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-outline watch-now-btn" data-movie="moving in with malaika"><i class="fas fa-play"></i> Watch</button>
+                            <button class="action-btn add-playlist-btn" data-movie="moving in with malaika"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="./img/super30-v.webp" alt="super30">
+                        <div class="movie-rating">8.6</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Super30</h3>
+                        <div class="movie-meta">
+                            <span>2014</span>
+                            <span>2h 49m</span>
+                        </div>
+                        <p class="movie-description">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-outline watch-now-btn" data-movie="super30"><i class="fas fa-play"></i> Watch</button>
+                            <button class="action-btn add-playlist-btn" data-movie="super30"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="./img/mr-v.webp" alt="avengersendgame">
+                        <div class="movie-rating">8.9</div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Avengers Endgame</h3>
+                        <div class="movie-meta">
+                            <span>2024</span>
+                            <span>2h 34m</span>
+                        </div>
+                        <p class="movie-description">The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</p>
+                        <div class="movie-actions">
+                            <button class="btn btn-outline watch-now-btn" data-movie="avengersendgame"><i class="fas fa-play"></i> Watch</button>
+                            <button class="action-btn add-playlist-btn" data-movie="avengersendgame"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Playlist Section -->
+    <section class="playlist">
+        <div class="container">
+            <div class="playlist-header">
+                <h2 class="section-title">My Playlist</h2>
+                <button class="btn btn-outline" id="clearPlaylist"><i class="fas fa-trash"></i> Clear Playlist</button>
+            </div>
+            
+            <div class="playlist-items" id="playlistItems">
+                <!-- Playlist items will be added here -->
+                <div class="empty-playlist">
+                    <p>Your playlist is empty. Add movies using the "+" button.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <div class="close-modal" id="closeModal">&times;</div>
+            <div class="modal-video">
+                <video id="moviePlayer" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="modal-info">
+                <h3 id="modalMovieTitle">Movie Title</h3>
+                <p id="modalMovieDesc">Movie description will appear here</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>SahuFlix</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Browse</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">All Titles</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">Documentaries</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Help Center</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Plans & Pricing</a></li>
+                        <li><a href="#">Supported Devices</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <p>Follow us on social media for the latest updates and content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 SahuFlix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Movie data
+        const movies = {
+            "The Last Adventure": {
+                title: "The Last Adventure",
+                year: 2023,
+                genre: "Action, Adventure",
+                rating: 4.8,
+                description: "In a world where secrets are currency, one agent must uncover the truth behind a global conspiracy that threatens to destroy everything he holds dear.",
+                video: "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            },
+            "1920": {
+                title: "1920",
+                year: 1999,
+                genre: "Sci-Fi, Action",
+                rating: 8.7,
+                description: "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+                video: "./videos/heder.mp4"
+            },
+            "moving in with malaika": {
+                title: "moving in with malaika",
+                year: 2023,
+                genre: "Crime, Thriller",
+                rating: 7.8,
+                description: "A group of elite thieves plan the most ambitious heist in history, targeting three major casinos simultaneously.",
+                video: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+            },
+            "super30": {
+                title: "super30",
+                year: 2014,
+                genre: "Sci-Fi, Adventure",
+                rating: 8.6,
+                description: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+                video: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+            },
+            "avengersendgame": {
+                title: "avengersendgame",
+                year: 1994,
+                genre: "Crime, Drama",
+                rating: 8.9,
+                description: "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+                video: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+            }
+        };
+
+        // DOM elements
+        const videoModal = document.getElementById('videoModal');
+        const moviePlayer = document.getElementById('moviePlayer');
+        const closeModal = document.getElementById('closeModal');
+        const modalMovieTitle = document.getElementById('modalMovieTitle');
+        const modalMovieDesc = document.getElementById('modalMovieDesc');
+        const playlistItems = document.getElementById('playlistItems');
+        const clearPlaylistBtn = document.getElementById('clearPlaylist');
+        const watchNowHero = document.getElementById('watchNowHero');
+        const addToPlaylistHero = document.getElementById('addToPlaylistHero');
+
+        // User playlist
+        let playlist = [];
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Filter button functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+            });
+        });
+
+        // Watch now functionality
+        function openVideoModal(movieTitle) {
+            const movie = movies[movieTitle];
+            if (movie) {
+                modalMovieTitle.textContent = movie.title;
+                modalMovieDesc.textContent = movie.description;
+                moviePlayer.src = movie.video;
+                videoModal.style.display = "flex";
+                moviePlayer.play();
+            }
+        }
+
+        // Add to playlist functionality
+        function addToPlaylist(movieTitle) {
+            const movie = movies[movieTitle];
+            if (movie && !playlist.includes(movieTitle)) {
+                playlist.push(movieTitle);
+                updatePlaylist();
+                showNotification(`${movieTitle} added to playlist`);
+            } else if (playlist.includes(movieTitle)) {
+                showNotification(`${movieTitle} is already in your playlist`);
+            }
+        }
+
+        // Remove from playlist
+        function removeFromPlaylist(movieTitle) {
+            playlist = playlist.filter(item => item !== movieTitle);
+            updatePlaylist();
+            showNotification(`${movieTitle} removed from playlist`);
+        }
+
+        // Update playlist UI
+        function updatePlaylist() {
+            if (playlist.length === 0) {
+                playlistItems.innerHTML = '<div class="empty-playlist"><p>Your playlist is empty. Add movies using the "+" button.</p></div>';
+                return;
+            }
+
+            playlistItems.innerHTML = '';
+            playlist.forEach(movieTitle => {
+                const movie = movies[movieTitle];
+                if (movie) {
+                    const item = document.createElement('div');
+                    item.className = 'playlist-item';
+                    item.innerHTML = `
+                        <div class="playlist-poster">
+                            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="${movie.title}">
+                        </div>
+                        <div class="playlist-info">
+                            <h3 class="playlist-title">${movie.title}</h3>
+                            <div class="playlist-meta">
+                                <span>${movie.year}</span>
+                                <span>${movie.genre}</span>
+                                <span><i class="fas fa-star"></i> ${movie.rating}</span>
+                            </div>
+                            <div class="playlist-actions">
+                                <button class="btn btn-outline watch-playlist-btn" data-movie="${movie.title}"><i class="fas fa-play"></i> Watch</button>
+                                <button class="action-btn remove-playlist-btn" data-movie="${movie.title}"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+                    `;
+                    playlistItems.appendChild(item);
+                }
+            });
+
+            // Add event listeners to the new buttons
+            document.querySelectorAll('.watch-playlist-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const movieTitle = e.target.closest('.watch-playlist-btn').dataset.movie;
+                    openVideoModal(movieTitle);
+                });
+            });
+
+            document.querySelectorAll('.remove-playlist-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const movieTitle = e.target.closest('.remove-playlist-btn').dataset.movie;
+                    removeFromPlaylist(movieTitle);
+                });
+            });
+        }
+
+        // Show notification
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: var(--primary);
+                color: white;
+                padding: 15px 25px;
+                border-radius: 4px;
+                z-index: 1000;
+                animation: fadeInOut 3s forwards;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // Event listeners
+        closeModal.addEventListener('click', () => {
+            videoModal.style.display = "none";
+            moviePlayer.pause();
+        });
+
+        clearPlaylistBtn.addEventListener('click', () => {
+            playlist = [];
+            updatePlaylist();
+            showNotification("Playlist cleared");
+        });
+
+        // Watch now buttons
+        document.querySelectorAll('.watch-now-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const movieTitle = e.target.closest('.watch-now-btn').dataset.movie;
+                openVideoModal(movieTitle);
+            });
+        });
+
+        // Add to playlist buttons
+        document.querySelectorAll('.add-playlist-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const movieTitle = e.target.closest('.add-playlist-btn').dataset.movie;
+                addToPlaylist(movieTitle);
+            });
+        });
+
+        // Hero section buttons
+        watchNowHero.addEventListener('click', () => {
+            openVideoModal("The Last Adventure");
+        });
+
+        addToPlaylistHero.addEventListener('click', () => {
+            addToPlaylist("The Last Adventure");
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                videoModal.style.display = "none";
+                moviePlayer.pause();
+            }
+        });
+
+        // Initialize playlist
+        updatePlaylist();
+
+        // Add CSS for notifications
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInOut {
+                0% { opacity: 0; transform: translateY(20px); }
+                10% { opacity: 1; transform: translateY(0); }
+                90% { opacity: 1; transform: translateY(0); }
+                100% { opacity: 0; transform: translateY(20px); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

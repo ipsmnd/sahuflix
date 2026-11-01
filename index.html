@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SahuFlix - Premium Streaming Service</title>
+    <link rel="shortcut icon" href="logo.png" type="logo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-play-circle"></i>
+                    SahuFlix
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="tvshows.html">TV Shows</a></li>
+                     <li><a href="movies.html">New & Popular</a></li>
+                    <li><a href="profile.html">My List</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="user-profile">
+                        <i class="fas fa-user"><a href="profile.html"></a></i>
+                    </div>
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Unlimited Movies, TV Shows, and More.</h1>
+                <p>Watch anywhere. Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without
+                    paying more.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Get Started <i class="fas fa-chevron-right"></i></a>
+                    <a href="login.html" class="btn btn-outline">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Now Section -->
+   <h1 class="about-title">OUR MOVIE'S</h1>
+
+<div class="carousel-container">
+	<button class="nav-arrow left">‹</button>
+	<div class="carousel-track">
+		<div class="card" data-index="0">
+			<img src="./img/hs-3.avif" alt="Member 1">
+		</div>
+		<div class="card" data-index="1">
+			<img src="./img/hs-2.webp" alt="Member 2">
+		</div>
+		<div class="card" data-index="2">
+			<img src="./img/hs-1.webp" alt="Member 3">
+		</div>
+		<div class="card" data-index="3">
+			<img src="./img/hs-4.webp" alt="Member 4">
+		</div>
+		<div class="card" data-index="4">
+			<img src="./img/hs-5.webp" alt="Member 5">
+		</div>
+		<div class="card" data-index="5">
+			<img src="./img/hs-6.webp" alt="Member 6">
+		</div>
+	</div>
+	<button class="nav-arrow right">›</button>
+</div>
+
+<div class="member-info">
+	<h2 class="member-name">David Kim</h2>
+	<p class="member-role">Founder</p>
+</div>
+
+<div class="dots">
+	<div class="dot active" data-index="0"></div>
+	<div class="dot" data-index="1"></div>
+	<div class="dot" data-index="2"></div>
+	<div class="dot" data-index="3"></div>
+	<div class="dot" data-index="4"></div>
+	<div class="dot" data-index="5"></div>
+</div>
+
+    <!-- Featured Content -->
+    <section class="section featured">
+        <div class="container">
+            <div class="featured-content">
+                <h2>Featured: The Crown Jewel</h2>
+                <div class="info-row">
+                    <div class="info-item">
+                        <i class="fas fa-star"></i>
+                        <span>2023</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>2h 18m</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-ticket-alt"></i>
+                        <span>Action, Thriller</span>
+                    </div>
+                </div>
+                <p>In a world where secrets are currency, one agent must uncover the truth behind a global conspiracy
+                    that threatens to destroy everything he holds dear.</p>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span>4.5/5 (12K reviews)</span>
+                </div>
+                <div class="hero-buttons" style="margin-top: 30px;">
+                    <a href="#" class="btn"><i class="fas fa-play"></i> Watch Now</a>
+                    <a href="#" class="btn btn-outline"><i class="fas fa-plus"></i> Add to List</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="section categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Browse Categories</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Action</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-laugh-beam"></i>
+                    <h3>Comedy</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Romance</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-ghost"></i>
+                    <h3>Horror</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Sci-Fi</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Fantasy</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Releases -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">New Releases</h2>
+                <a href="browse.html" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+
+            <div class="content-grid">
+                <!-- Card 1 -->
+                <div class="content-card">
+                    <img src="./img/hb-1.webp"
+                        alt="Movie" class="card-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Forest King</h3>
+                        <div class="card-meta">
+                            <span>2023</span>
+                            <span>1h 45m</span>
+                        </div>
+                    </div>
+                    <div class="card-hover-content">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <p>Adventure, Family</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="content-card">
+                    <img src="./img/hb-2.webp"
+                        alt="Movie" class="card-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Neon Dreams</h3>
+                        <div class="card-meta">
+                            <span>2023</span>
+                            <span>2h 10m</span>
+                        </div>
+                    </div>
+                    <div class="card-hover-content">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <p>Sci-Fi, Cyberpunk</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="content-card">
+                    <img src="./img/hb-3.webp"
+                        alt="Movie" class="card-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Desert Dreams</h3>
+                        <div class="card-meta">
+                            <span>2022</span>
+                            <span>1h 50m</span>
+                        </div>
+                    </div>
+                    <div class="card-hover-content">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <p>Drama, Romance</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="content-card">
+                    <img src="./img/hb-4.webp"
+                        alt="Movie" class="card-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">The Last Adventure</h3>
+                        <div class="card-meta">
+                            <span>2023</span>
+                            <span>2h 15m</span>
+                        </div>
+                    </div>
+                    <div class="card-hover-content">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <p>Action, Adventure</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="content-card">
+                    <img src="./img/hb-5.webp"
+                        alt="Movie" class="card-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cyber City</h3>
+                        <div class="card-meta">
+                            <span>2023</span>
+                            <span>1h 48m</span>
+                        </div>
+                    </div>
+                    <div class="card-hover-content">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <p>Sci-Fi, Thriller</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>SahuFlix</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Browse</h4>
+                    <ul class="footer-links">
+                        <li><a href="browse.html">All Titles</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">Documentaries</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Help Center</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Plans & Pricing</a></li>
+                        <li><a href="#">Supported Devices</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <p>Follow us on social media for the latest updates and content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 SahuFlix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="cardslaider.js"></script>
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Card hover effect
+        const cards = document.querySelectorAll('.content-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-15px)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
+
+
+//  card slaider
+
+
+    </script>
+</body>
+
+</html>

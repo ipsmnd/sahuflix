@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SahuFlix- Browse Content</title>
+    <link rel="shortcut icon" href="logo.png" type="logo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-play-circle"></i>
+                    SahuFlix                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="tvshows.html">TV Shows</a></li>
+                     <li><a href="movies.html">New & Popular</a></li>
+                    <li><a href="profile.html">My List</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="user-profile">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Endless Entertainment</h1>
+                <p>Browse thousands of movies and TV shows. New content added every week.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Start Watching</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="genre">Genre</label>
+                    <select id="genre" class="filter-select">
+                        <option value="all">All Genres</option>
+                        <option value="action">Action</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="sci-fi">Sci-Fi</option>
+                        <option value="horror">Horror</option>
+                        <option value="romance">Romance</option>
+                        <option value="documentary">Documentary</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="year">Release Year</label>
+                    <select id="year" class="filter-select">
+                        <option value="all">All Years</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="rating">Rating</label>
+                    <select id="rating" class="filter-select">
+                        <option value="all">All Ratings</option>
+                        <option value="9">9+ (Excellent)</option>
+                        <option value="8">8+ (Very Good)</option>
+                        <option value="7">7+ (Good)</option>
+                        <option value="6">6+ (Fair)</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sort">Sort By</label>
+                    <select id="sort" class="filter-select">
+                        <option value="popular">Most Popular</option>
+                        <option value="newest">Newest Releases</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="title">Title (A-Z)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Grid -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid" id="contentGrid">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <!-- Pagination buttons will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>SahuFlix</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Browse</h4>
+                    <ul class="footer-links">
+                        <li><a href="browse.html">All Titles</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">Documentaries</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Help Center</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Plans & Pricing</a></li>
+                        <li><a href="#">Supported Devices</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <p>Follow us on social media for the latest updates and content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 SahuFlix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sample content data
+        const contentData = [
+            { id: 1, title: "The Last Adventure", year: 2023, rating: 4.8, duration: "2h 15m", genres: ["Action", "Adventure"], image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 2, title: "Cyber City", year: 2023, rating: 4.5, duration: "1h 48m", genres: ["Sci-Fi", "Thriller"], image: "https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 3, title: "Midnight Express", year: 2022, rating: 4.3, duration: "2h 05m", genres: ["Drama", "Mystery"], image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 4, title: "Ocean's Legacy", year: 2023, rating: 4.6, duration: "1h 55m", genres: ["Adventure", "Fantasy"], image: "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 5, title: "Desert Dreams", year: 2022, rating: 4.2, duration: "1h 50m", genres: ["Drama", "Romance"], image: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 6, title: "Neon Dreams", year: 2023, rating: 4.7, duration: "2h 10m", genres: ["Sci-Fi", "Cyberpunk"], image: "https://images.unsplash.com/photo-1608889476518-738c9b1dcb40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 7, title: "Mountain High", year: 2022, rating: 4.0, duration: "1h 45m", genres: ["Adventure", "Drama"], image: "https://images.unsplash.com/photo-1512070679279-8988d32161be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 8, title: "Space Odyssey", year: 2023, rating: 4.9, duration: "2h 30m", genres: ["Sci-Fi", "Adventure"], image: "https://images.unsplash.com/photo-1543536448-d209d2d13a1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 9, title: "Cinema Royale", year: 2023, rating: 4.4, duration: "1h 52m", genres: ["Drama", "Comedy"], image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 10, title: "Winter's Tale", year: 2022, rating: 3.9, duration: "2h 05m", genres: ["Drama", "Romance"], image: "https://images.unsplash.com/photo-1540224871915-bc8ffb782bdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 11, title: "Jurassic Quest", year: 2023, rating: 4.1, duration: "2h 12m", genres: ["Adventure", "Sci-Fi"], image: "https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 12, title: "Mystic River", year: 2023, rating: 4.5, duration: "1h 58m", genres: ["Mystery", "Thriller"], image: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 13, title: "Golden Age", year: 2022, rating: 4.0, duration: "1h 50m", genres: ["Drama", "History"], image: "https://images.unsplash.com/photo-1616530940355-351fabd952eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 14, title: "Urban Legends", year: 2023, rating: 4.2, duration: "1h 55m", genres: ["Horror", "Thriller"], image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 1, title: "The Last Adventure", year: 2023, rating: 4.8, duration: "2h 15m", genres: ["Action", "Adventure"], image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 2, title: "Cyber City", year: 2023, rating: 4.5, duration: "1h 48m", genres: ["Sci-Fi", "Thriller"], image: "https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 3, title: "Midnight Express", year: 2022, rating: 4.3, duration: "2h 05m", genres: ["Drama", "Mystery"], image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 4, title: "Ocean's Legacy", year: 2023, rating: 4.6, duration: "1h 55m", genres: ["Adventure", "Fantasy"], image: "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 5, title: "Desert Dreams", year: 2022, rating: 4.2, duration: "1h 50m", genres: ["Drama", "Romance"], image: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 6, title: "Neon Dreams", year: 2023, rating: 4.7, duration: "2h 10m", genres: ["Sci-Fi", "Cyberpunk"], image: "https://images.unsplash.com/photo-1608889476518-738c9b1dcb40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 7, title: "Mountain High", year: 2022, rating: 4.0, duration: "1h 45m", genres: ["Adventure", "Drama"], image: "https://images.unsplash.com/photo-1512070679279-8988d32161be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 8, title: "Space Odyssey", year: 2023, rating: 4.9, duration: "2h 30m", genres: ["Sci-Fi", "Adventure"], image: "https://images.unsplash.com/photo-1543536448-d209d2d13a1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 9, title: "Cinema Royale", year: 2023, rating: 4.4, duration: "1h 52m", genres: ["Drama", "Comedy"], image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 10, title: "Winter's Tale", year: 2022, rating: 3.9, duration: "2h 05m", genres: ["Drama", "Romance"], image: "https://images.unsplash.com/photo-1540224871915-bc8ffb782bdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 11, title: "Jurassic Quest", year: 2023, rating: 4.1, duration: "2h 12m", genres: ["Adventure", "Sci-Fi"], image: "https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 12, title: "Mystic River", year: 2023, rating: 4.5, duration: "1h 58m", genres: ["Mystery", "Thriller"], image: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 13, title: "Golden Age", year: 2022, rating: 4.0, duration: "1h 50m", genres: ["Drama", "History"], image: "https://images.unsplash.com/photo-1616530940355-351fabd952eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 14, title: "Urban Legends", year: 2023, rating: 4.2, duration: "1h 55m", genres: ["Horror", "Thriller"], image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 15, title: "Summer Nights", year: 2021, rating: 4.6, duration: "1h 45m", genres: ["Romance", "Comedy"], image: "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" },
+            { id: 16, title: "Future World", year: 2023, rating: 4.8, duration: "2h 20m", genres: ["Sci-Fi", "Action"], image: "https://images.unsplash.com/photo-1533613220915-609f661a6fe1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" }
+        ];
+
+        // DOM elements
+        const contentGrid = document.getElementById('contentGrid');
+        const pagination = document.getElementById('pagination');
+        const genreSelect = document.getElementById('genre');
+        const yearSelect = document.getElementById('year');
+        const ratingSelect = document.getElementById('rating');
+        const sortSelect = document.getElementById('sort');
+
+        // Pagination variables
+        const itemsPerPage = 5;
+        let currentPage = 1;
+        let filteredData = [...contentData];
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            renderContent();
+            renderPagination();
+            setupEventListeners();
+        });
+
+        // Set up event listeners
+        function setupEventListeners() {
+            // Header scroll effect
+            window.addEventListener('scroll', function() {
+                const header = document.getElementById('header');
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile menu toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+            
+            // Filter change events
+            genreSelect.addEventListener('change', applyFilters);
+            yearSelect.addEventListener('change', applyFilters);
+            ratingSelect.addEventListener('change', applyFilters);
+            sortSelect.addEventListener('change', applyFilters);
+        }
+
+        // Apply filters
+        function applyFilters() {
+            // Show loading indicator
+            contentGrid.innerHTML = '<div class="loading"><i class="fas fa-spinner"></i> Applying filters...</div>';
+            
+            // Get filter values
+            const genreFilter = genreSelect.value;
+            const yearFilter = yearSelect.value;
+            const ratingFilter = ratingSelect.value;
+            
+            // Apply filters after a short delay to simulate loading
+            setTimeout(() => {
+                filteredData = contentData.filter(item => {
+                    // Genre filter
+                    if (genreFilter !== 'all' && !item.genres.includes(genreFilter)) {
+                        return false;
+                    }
+                    
+                    // Year filter
+                    if (yearFilter !== 'all' && item.year.toString() !== yearFilter) {
+                        return false;
+                    }
+                    
+                    // Rating filter
+                    if (ratingFilter !== 'all' && item.rating < parseFloat(ratingFilter)) {
+                        return false;
+                    }
+                    
+                    return true;
+                });
+                
+                // Apply sorting
+                const sortValue = sortSelect.value;
+                switch(sortValue) {
+                    case 'newest':
+                        filteredData.sort((a, b) => b.year - a.year);
+                        break;
+                    case 'rating':
+                        filteredData.sort((a, b) => b.rating - a.rating);
+                        break;
+                    case 'title':
+                        filteredData.sort((a, b) => a.title.localeCompare(b.title));
+                        break;
+                    default: // popular (default)
+                        filteredData.sort((a, b) => b.rating - a.rating);
+                }
+                
+                // Reset to first page
+                currentPage = 1;
+                
+                // Render content and pagination
+                renderContent();
+                renderPagination();
+            }, 500);
+        }
+
+        // Render content cards
+        function renderContent() {
+            contentGrid.innerHTML = '';
+            
+            // Calculate items to show for current page
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = Math.min(startIndex + itemsPerPage, filteredData.length);
+            const pageItems = filteredData.slice(startIndex, endIndex);
+            
+            if (pageItems.length === 0) {
+                contentGrid.innerHTML = '<div class="loading">No content found matching your criteria</div>';
+                return;
+            }
+            
+            // Create cards for each item
+            pageItems.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'content-card';
+                card.innerHTML = `
+                    <img src="${item.image}" alt="${item.title}" class="card-img">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">${item.title}</h3>
+                        <div class="card-meta">
+                            <span>${item.year}</span>
+                            <span><i class="fas fa-star"></i> ${item.rating}</span>
+                        </div>
+                    </div>
+                    <div class="card-hover-content">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <p>${item.genres.join(', ')}</p>
+                        <p>${item.duration}</p>
+                    </div>
+                `;
+                contentGrid.appendChild(card);
+            });
+        }
+
+        // Render pagination buttons
+        function renderPagination() {
+            pagination.innerHTML = '';
+            
+            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+            
+            // Previous button
+            const prevButton = document.createElement('button');
+            prevButton.className = 'page-btn';
+            prevButton.innerHTML = '<i class="fas fa-chevron-left"></i>';
+            prevButton.disabled = currentPage === 1;
+            if (currentPage === 1) prevButton.classList.add('disabled');
+            prevButton.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderContent();
+                    renderPagination();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+            pagination.appendChild(prevButton);
+            
+            // Page buttons
+            const maxVisiblePages = 5;
+            let startPage, endPage;
+            
+            if (totalPages <= maxVisiblePages) {
+                startPage = 1;
+                endPage = totalPages;
+            } else {
+                const maxPagesBeforeCurrent = Math.floor(maxVisiblePages / 2);
+                const maxPagesAfterCurrent = Math.ceil(maxVisiblePages / 2) - 1;
+                
+                if (currentPage <= maxPagesBeforeCurrent) {
+                    startPage = 1;
+                    endPage = maxVisiblePages;
+                } else if (currentPage + maxPagesAfterCurrent >= totalPages) {
+                    startPage = totalPages - maxVisiblePages + 1;
+                    endPage = totalPages;
+                } else {
+                    startPage = currentPage - maxPagesBeforeCurrent;
+                    endPage = currentPage + maxPagesAfterCurrent;
+                }
+            }
+            
+            for (let i = startPage; i <= endPage; i++) {
+                const pageButton = document.createElement('button');
+                pageButton.className = 'page-btn';
+                if (i === currentPage) pageButton.classList.add('active');
+                pageButton.textContent = i;
+                pageButton.addEventListener('click', () => {
+                    currentPage = i;
+                    renderContent();
+                    renderPagination();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+                pagination.appendChild(pageButton);
+            }
+            
+            // Next button
+            const nextButton = document.createElement('button');
+            nextButton.className = 'page-btn';
+            nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>';
+            nextButton.disabled = currentPage === totalPages;
+            if (currentPage === totalPages) nextButton.classList.add('disabled');
+            nextButton.addEventListener('click', () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderContent();
+                    renderPagination();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+            pagination.appendChild(nextButton);
+        }
+    </script>
+</body>
+</html>

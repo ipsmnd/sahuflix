@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SahuFlix - Your Profile</title>
+    <link rel="shortcut icon" href="logo.png" type="logo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-play-circle"></i>
+                    SahuFlix
+                </a>
+                
+                <ul class="nav-links">
+                   <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="tvshows.html">TV Shows</a></li>
+                     <li><a href="movies.html">New & Popular</a></li>
+                    <li><a href="profile.html" class="active">My List</a></li>
+                </ul>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="user-profile">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Hero -->
+    <section class="profile-hero">
+        <div class="profile-info">
+            <div class="avatar-container">
+                <img src="./logo.png" alt="Profile Avatar" class="profile-avatar">
+                <div class="edit-avatar">
+                    <i class="fas fa-camera"></i>
+                </div>
+            </div>
+            
+            <div class="profile-details">
+                <h1>Sahu Flix</h1>
+                <p>Premium Member since 2020</p>
+                
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">247</div>
+                        <div class="stat-label">Hours Watched</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">42</div>
+                        <div class="stat-label">Movies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">18</div>
+                        <div class="stat-label">TV Shows</div>
+                    </div>
+                </div>
+                
+                <div class="profile-actions">
+                    <a href="#" class="btn">Edit Profile</a>
+                    <a href="#" class="btn btn-outline">Settings</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="profile-grid">
+                <!-- Sidebar -->
+                <div class="profile-sidebar">
+                    <h3 class="sidebar-title">My Account</h3>
+                    <ul class="sidebar-menu">
+                        <li><a href="#" class="active"><i class="fas fa-user"></i> Profile</a></li>
+                        <li><a href="#"><i class="fas fa-history"></i> Watch History</a></li>
+                        <li><a href="#"><i class="fas fa-bookmark"></i> My List</a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> Account Settings</a></li>
+                        <li><a href="#"><i class="fas fa-credit-card"></i> Subscription</a></li>
+                        <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="profile-main">
+                    <!-- Watch History Section -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h2 class="section-title">Recently Watched</h2>
+                            <a href="#" class="view-all">View All</a>
+                        </div>
+                        
+                        <div class="history-grid">
+                            <!-- History Item 1 -->
+                            <div class="history-card">
+                                <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="history-img">
+                                <div class="history-content">
+                                    <h3 class="history-title">The Last Adventure</h3>
+                                    <div class="history-meta">
+                                        <span>Movie</span>
+                                        <span>2 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- History Item 2 -->
+                            <div class="history-card">
+                                <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="history-img">
+                                <div class="history-content">
+                                    <h3 class="history-title">Cyber City</h3>
+                                    <div class="history-meta">
+                                        <span>TV Show</span>
+                                        <span>1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- History Item 3 -->
+                            <div class="history-card">
+                                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="history-img">
+                                <div class="history-content">
+                                    <h3 class="history-title">Midnight Express</h3>
+                                    <div class="history-meta">
+                                        <span>Movie</span>
+                                        <span>2 weeks ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- History Item 4 -->
+                            <div class="history-card">
+                                <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="history-img">
+                                <div class="history-content">
+                                    <h3 class="history-title">Ocean's Legacy</h3>
+                                    <div class="history-meta">
+                                        <span>Movie</span>
+                                        <span>3 weeks ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- My List Section -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h2 class="section-title">My List</h2>
+                            <a href="#" class="view-all">Manage List</a>
+                        </div>
+                        
+                        <div class="list-grid">
+                            <!-- List Item 1 -->
+                            <div class="list-card">
+                                <img src="https://images.unsplash.com/photo-1608889476518-738c9b1dcb40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="list-img">
+                                <div class="list-overlay">
+                                    <button class="remove-btn"><i class="fas fa-times"></i> Remove</button>
+                                </div>
+                            </div>
+                            
+                            <!-- List Item 2 -->
+                            <div class="list-card">
+                                <img src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="list-img">
+                                <div class="list-overlay">
+                                    <button class="remove-btn"><i class="fas fa-times"></i> Remove</button>
+                                </div>
+                            </div>
+                            
+                            <!-- List Item 3 -->
+                            <div class="list-card">
+                                <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="list-img">
+                                <div class="list-overlay">
+                                    <button class="remove-btn"><i class="fas fa-times"></i> Remove</button>
+                                </div>
+                            </div>
+                            
+                            <!-- List Item 4 -->
+                            <div class="list-card">
+                                <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="list-img">
+                                <div class="list-overlay">
+                                    <button class="remove-btn"><i class="fas fa-times"></i> Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Account Settings -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h2 class="section-title">Account Settings</h2>
+                        </div>
+                        
+                        <div class="settings-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" class="form-control" value="Alex">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" class="form-control" value="Morgan">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" value="alex.morgan@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" class="form-control" value="••••••••">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="form-control" value="+1 (555) 123-4567">
+                            </div>
+                            
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" checked>
+                                <label for="newsletter">Subscribe to newsletter</label>
+                            </div>
+                            
+                            <button class="btn">Save Changes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Subscription -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h2 class="section-title">Subscription</h2>
+                        </div>
+                        
+                        <div class="subscription-card">
+                            <div class="plan-info">
+                                <h3>Premium Plan</h3>
+                                <div class="plan-price">$14.99<span>/month</span></div>
+                                <p>Next billing date: Oct 15, 2023</p>
+                                
+                                <ul class="plan-details">
+                                    <li><i class="fas fa-check-circle"></i> 4K Ultra HD streaming</li>
+                                    <li><i class="fas fa-check-circle"></i> Watch on 4 devices at once</li>
+                                    <li><i class="fas fa-check-circle"></i> Unlimited movies and TV shows</li>
+                                    <li><i class="fas fa-check-circle"></i> Ad-free experience</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="subscription-actions">
+                                <button class="btn btn-outline">Change Plan</button>
+                                <button class="btn">Cancel Subscription</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>SahuFlix</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Browse</h4>
+                    <ul class="footer-links">
+                        <li><a href="browse.html">All Titles</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">Documentaries</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Help Center</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Plans & Pricing</a></li>
+                        <li><a href="#">Supported Devices</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <p>Follow us on social media for the latest updates and content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 SahuFlix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Active menu item
+        const menuItems = document.querySelectorAll('.sidebar-menu a');
+        menuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                menuItems.forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Remove from list functionality
+        const removeButtons = document.querySelectorAll('.remove-btn');
+        removeButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const card = this.closest('.list-card');
+                card.style.transform = 'scale(0)';
+                card.style.opacity = '0';
+                setTimeout(() => {
+                    card.remove();
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>

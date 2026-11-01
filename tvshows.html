@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SahuFlix- TV Shows</title>
+    <link rel="shortcut icon" href="logo.png" type="logo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-play-circle"></i>
+                    SahuFlix </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="tvshows.html">TV Shows</a></li>
+                     <li><a href="movies.html">New & Popular</a></li>
+                    <li><a href="profile.html">My List</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search TV shows..." id="searchInput">
+                    </div>
+                    <div class="user-profile">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>The Crown Legacy</h1>
+                <div class="hero-meta">
+                    <span><i class="fas fa-star"></i> 4.9/5</span>
+                    <span><i class="fas fa-calendar"></i> 2023</span>
+                    <span><i class="fas fa-ticket-alt"></i> Drama, History</span>
+                    <span><i class="fas fa-tv"></i> Season 4</span>
+                </div>
+                <p>In a world of power, betrayal, and royal intrigue, one family must navigate the treacherous waters of
+                    the monarchy. The critically acclaimed series returns for its most explosive season yet.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn" id="watchNowBtn"><i class="fas fa-play"></i> Watch Now</a>
+                    <a href="#" class="btn btn-outline" id="addToListBtn"><i class="fas fa-plus"></i> Add to List</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Navigation -->
+    <section class="categories-nav">
+        <div class="container">
+            <div class="categories-container">
+                <button class="category-btn active" data-category="all">All TV Shows</button>
+                <button class="category-btn" data-category="drama">Drama</button>
+                <button class="category-btn" data-category="comedy">Comedy</button>
+                <button class="category-btn" data-category="crime">Crime</button>
+                <button class="category-btn" data-category="sci-fi">Sci-Fi</button>
+                <button class="category-btn" data-category="fantasy">Fantasy</button>
+                <button class="category-btn" data-category="documentary">Documentary</button>
+                <button class="category-btn" data-category="reality">Reality</button>
+                <button class="category-btn" data-category="animated">Animated</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <div id="contentContainer">
+        <!-- Trending Now -->
+        <section class="section" id="trendingSection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Trending Now</h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="horizontal-grid" id="trendingGrid">
+                    <!-- Content will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- New Releases -->
+        <section class="section" id="newSection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">New Releases</h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="horizontal-grid" id="newGrid">
+                    <!-- Content will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Shows -->
+        <section class="section" id="popularSection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Popular Shows</h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <div class="horizontal-grid" id="popularGrid">
+                    <!-- Content will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>SahuFlix</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Browse</h4>
+                    <ul class="footer-links">
+                        <li><a href="browse.html">All Titles</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="tv-shows.html">TV Shows</a></li>
+                        <li><a href="#">Documentaries</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Help Center</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Plans & Pricing</a></li>
+                        <li><a href="#">Supported Devices</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <p>Follow us on social media for the latest updates and content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 SahuFlix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div class="toast" id="toast"></div>
+
+    <script>
+        // TV Shows Data
+        const tvShows = {
+            trending: [
+                { id: 1, title: "Cyberpunk 2077", year: 2023, rating: 4.7, description: "In a dystopian future, a group of rebels fight against the oppressive regime controlling Neo-Tokyo.", image: "https://images.unsplash.com/photo-1609743522653-52354461eb27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "sci-fi" },
+                { id: 2, title: "Midnight Detective", year: 2022, rating: 4.6, description: "A noir detective solves mysterious crimes in the dark underbelly of 1940s Los Angeles.", image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "crime" },
+                { id: 3, title: "The Last Frontier", year: 2023, rating: 4.8, description: "Colonists struggle to survive on a newly discovered planet filled with unknown dangers.", image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "sci-fi" },
+                { id: 4, title: "Desert Dreams", year: 2021, rating: 4.3, description: "A family saga set in the American Southwest during the gold rush era.", image: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "drama" },
+                { id: 5, title: "Neon Nights", year: 2023, rating: 4.5, description: "A cyberpunk thriller set in 2087 where hackers battle corporate overlords.", image: "https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "sci-fi" }
+            ],
+            new: [
+                { id: 6, title: "Mountain Rescue", year: 2023, rating: 4.6, description: "A team of elite rescuers save lives in the most dangerous mountain terrains.", image: "https://images.unsplash.com/photo-1512070679279-8988d32161be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "drama" },
+                { id: 7, title: "Ocean Mysteries", year: 2023, rating: 4.4, description: "Marine biologists explore the deepest parts of the ocean, discovering new species.", image: "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "documentary" },
+                { id: 8, title: "City of Shadows", year: 2023, rating: 4.9, description: "In 1920s Chicago, a detective hunts a serial killer terrorizing the city.", image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "crime" },
+                { id: 9, title: "Digital Dreams", year: 2023, rating: 4.2, description: "A tech entrepreneur creates a revolutionary AI that begins to develop consciousness.", image: "https://images.unsplash.com/photo-1608889476518-738c9b1dcb40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "sci-fi" },
+                { id: 10, title: "Space Pioneers", year: 2023, rating: 4.7, description: "The first human colony on Mars faces unexpected challenges in this sci-fi epic.", image: "https://images.unsplash.com/photo-1543536448-d209d2d13a1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "sci-fi" }
+            ],
+            popular: [
+                { id: 11, title: "Cinema Legends", year: 2022, rating: 4.8, description: "Behind-the-scenes stories of Hollywood's most iconic films and filmmakers.", image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "documentary" },
+                { id: 12, title: "Winter Falls", year: 2021, rating: 4.5, description: "A small town in Alaska faces supernatural events during the long polar night.", image: "https://images.unsplash.com/photo-1540224871915-bc8ffb782bdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "fantasy" },
+                { id: 13, title: "Dinosaur Island", year: 2023, rating: 4.3, description: "Scientists discover an island where dinosaurs never went extinct.", image: "https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "fantasy" },
+                { id: 14, title: "Mystic Valley", year: 2022, rating: 4.7, description: "A family moves to a remote valley only to discover it's full of magical secrets.", image: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "fantasy" },
+                { id: 15, title: "Golden Era", year: 2023, rating: 4.9, description: "The story of a jazz musician's rise to fame in 1950s New York City.", image: "https://images.unsplash.com/photo-1616530940355-351fabd952eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80", category: "drama" }
+            ]
+        };
+
+        // DOM Elements
+        const trendingGrid = document.getElementById('trendingGrid');
+        const newGrid = document.getElementById('newGrid');
+        const popularGrid = document.getElementById('popularGrid');
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const searchInput = document.getElementById('searchInput');
+        const contentContainer = document.getElementById('contentContainer');
+        const toast = document.getElementById('toast');
+        const watchNowBtn = document.getElementById('watchNowBtn');
+        const addToListBtn = document.getElementById('addToListBtn');
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            renderShows();
+            setupEventListeners();
+        });
+
+        // Set up event listeners
+        function setupEventListeners() {
+            // Header scroll effect
+            window.addEventListener('scroll', function () {
+                const header = document.getElementById('header');
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Mobile menu toggle
+            hamburger.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
+
+            // Category filtering
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    // Get category filter
+                    const category = this.dataset.category;
+
+                    // Apply category filter
+                    applyCategoryFilter(category);
+                });
+            });
+
+            // Search functionality
+            searchInput.addEventListener('input', function () {
+                const searchTerm = this.value.toLowerCase();
+                if (searchTerm.length > 2) {
+                    searchShows(searchTerm);
+                } else {
+                    renderShows();
+                }
+            });
+
+            // Hero action buttons
+            watchNowBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                showToast('Now playing: The Crown Legacy');
+            });
+
+            addToListBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                showToast('Added to your list');
+            });
+        }
+
+        // Render shows to the grid
+        function renderShows() {
+            renderShowSection(trendingGrid, tvShows.trending);
+            renderShowSection(newGrid, tvShows.new);
+            renderShowSection(popularGrid, tvShows.popular);
+        }
+
+        // Render a single show section
+        function renderShowSection(container, shows) {
+            container.innerHTML = '';
+
+            shows.forEach(show => {
+                const showCard = document.createElement('div');
+                showCard.className = 'show-card';
+                showCard.innerHTML = `
+                    <img src="${show.image}" alt="${show.title}" class="show-img">
+                    <div class="show-content">
+                        <h3 class="show-title">${show.title}</h3>
+                        <div class="show-meta">
+                            <span><i class="fas fa-star"></i> ${show.rating}</span>
+                            <span>${show.year}</span>
+                        </div>
+                        <p class="show-description">${show.description}</p>
+                        <div class="show-actions">
+                            <button class="action-btn" data-action="play" data-show="${show.id}"><i class="fas fa-play"></i></button>
+                            <button class="action-btn" data-action="add" data-show="${show.id}"><i class="fas fa-plus"></i></button>
+                            <button class="action-btn" data-action="share" data-show="${show.id}"><i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(showCard);
+            });
+
+            // Add event listeners to action buttons
+            container.querySelectorAll('.action-btn').forEach(button => {
+                button.addEventListener('click', function () {
+                    const action = this.dataset.action;
+                    const showId = this.dataset.show;
+                    const show = [...tvShows.trending, ...tvShows.new, ...tvShows.popular].find(s => s.id == showId);
+
+                    switch (action) {
+                        case 'play':
+                            showToast(`Now playing: ${show.title}`);
+                            break;
+                        case 'add':
+                            showToast(`Added to your list: ${show.title}`);
+                            break;
+                        case 'share':
+                            showToast(`Shared: ${show.title}`);
+                            break;
+                    }
+                });
+            });
+        }
+
+        // Apply category filter
+        function applyCategoryFilter(category) {
+            // Show loading indicator
+            contentContainer.innerHTML = `
+                <div class="loading">
+                    <i class="fas fa-spinner"></i> Loading ${category === 'all' ? 'all shows' : category}...
+                </div>
+            `;
+
+            // Simulate loading delay
+            setTimeout(() => {
+                if (category === 'all') {
+                    renderShows();
+                    contentContainer.innerHTML = '';
+                    contentContainer.innerHTML = `
+                        <section class="section" id="trendingSection">
+                            <div class="container">
+                                <div class="section-header">
+                                    <h2 class="section-title">Trending Now</h2>
+                                    <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                
+                                <div class="horizontal-grid" id="trendingGrid"></div>
+                            </div>
+                        </section>
+                        <section class="section" id="newSection">
+                            <div class="container">
+                                <div class="section-header">
+                                    <h2 class="section-title">New Releases</h2>
+                                    <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                
+                                <div class="horizontal-grid" id="newGrid"></div>
+                            </div>
+                        </section>
+                        <section class="section" id="popularSection">
+                            <div class="container">
+                                <div class="section-header">
+                                    <h2 class="section-title">Popular Shows</h2>
+                                    <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                
+                                <div class="horizontal-grid" id="popularGrid"></div>
+                            </div>
+                        </section>
+                    `;
+
+                    // Re-render shows
+                    renderShows();
+                } else {
+                    // Filter shows by category
+                    const filteredTrending = tvShows.trending.filter(show => show.category === category);
+                    const filteredNew = tvShows.new.filter(show => show.category === category);
+                    const filteredPopular = tvShows.popular.filter(show => show.category === category);
+
+                    // Update DOM references
+                    trendingGrid = document.getElementById('trendingGrid');
+                    newGrid = document.getElementById('newGrid');
+                    popularGrid = document.getElementById('popularGrid');
+
+                    // Render filtered shows
+                    renderShowSection(trendingGrid, filteredTrending);
+                    renderShowSection(newGrid, filteredNew);
+                    renderShowSection(popularGrid, filteredPopular);
+                }
+            }, 800);
+        }
+
+        // Search shows
+        function searchShows(term) {
+            // Filter all shows
+            const allShows = [...tvShows.trending, ...tvShows.new, ...tvShows.popular];
+            const filteredShows = allShows.filter(show =>
+                show.title.toLowerCase().includes(term) ||
+                show.description.toLowerCase().includes(term)
+            );
+
+            // Create a temporary container
+            contentContainer.innerHTML = `
+                <section class="section">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2 class="section-title">Search Results for "${term}"</h2>
+                        </div>
+                        <div class="horizontal-grid" id="searchGrid"></div>
+                    </div>
+                </section>
+            `;
+
+            // Render search results
+            const searchGrid = document.getElementById('searchGrid');
+            renderShowSection(searchGrid, filteredShows);
+        }
+
+        // Show toast notification
+        function showToast(message) {
+            toast.textContent = message;
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>

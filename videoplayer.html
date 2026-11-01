@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Video Player | SahuFlix</title>
+    <link rel="shortcut icon" href="logo.png" type="logo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<body>
+    <!-- Header -->
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-play-circle"></i>
+                    SahuFlix
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="tvshows.html">TV Shows</a></li>
+                     <li><a href="movies.html">New & Popular</a></li>
+                    <li><a href="profile.html">My List</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="user-profile">
+                        <i class="fas fa-user"><a href="profile.html"></a></i>
+                    </div>
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Player Section -->
+    <section class="player-container">
+        <div class="video-container">
+            <video id="main-video" poster="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80">
+                <!-- Using a reliable video source -->
+                <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="loading-indicator" id="loadingIndicator">
+                <div class="spinner"></div>
+            </div>
+            
+            <div class="video-overlay">
+                <div class="video-info">
+                    <h1 class="video-title">The Last Adventure</h1>
+                    <div class="video-meta">
+                        <span><i class="fas fa-star"></i> 4.8/5</span>
+                        <span><i class="fas fa-calendar"></i> 2023</span>
+                        <span><i class="fas fa-clock"></i> 2h 15m</span>
+                        <span><i class="fas fa-ticket-alt"></i> Action, Adventure</span>
+                    </div>
+                    <p class="video-description">
+                        In a world where secrets are currency, one agent must uncover the truth behind a global conspiracy that threatens to destroy everything he holds dear. A thrilling adventure with breathtaking visuals and non-stop action.
+                    </p>
+                    <div class="video-actions">
+                        <button class="btn" id="playBtn"><i class="fas fa-play"></i> Play Now</button>
+                        <button class="btn btn-outline"><i class="fas fa-plus"></i> My List</button>
+                        <button class="btn btn-outline"><i class="fas fa-share-alt"></i> Share</button>
+                    </div>
+                </div>
+                
+                <div class="player-controls">
+                    <div class="progress-container" id="progressContainer">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                    <div class="control-buttons">
+                        <div class="left-controls">
+                            <button class="control-btn" id="playPauseBtn">
+                                <i class="fas fa-pause"></i>
+                            </button>
+                            <button class="control-btn" id="rewindBtn">
+                                <i class="fas fa-step-backward"></i>
+                            </button>
+                            <button class="control-btn" id="forwardBtn">
+                                <i class="fas fa-step-forward"></i>
+                            </button>
+                            <div class="volume-container">
+                                <button class="control-btn" id="volumeBtn">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                                <div class="volume-slider" id="volumeSlider">
+                                    <div class="volume-level" id="volumeLevel"></div>
+                                </div>
+                            </div>
+                            <div class="time-display" id="timeDisplay">
+                                0:00 / 0:00
+                            </div>
+                        </div>
+                        <div class="right-controls">
+                            <button class="control-btn" id="captionsBtn">
+                                <i class="fas fa-closed-captioning"></i>
+                            </button>
+                            <button class="control-btn" id="settingsBtn">
+                                <i class="fas fa-cog"></i>
+                            </button>
+                            <button class="control-btn" id="fullscreenBtn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Content -->
+    <section class="related-content">
+        <div class="container">
+            <h2 class="section-title">More Like This</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Cyber City</h3>
+                        <div class="card-meta">
+                            <span>2023</span>
+                            <span>1h 48m</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Midnight Express</h3>
+                        <div class="card-meta">
+                            <span>2022</span>
+                            <span>2h 05m</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Ocean's Legacy</h3>
+                        <div class="card-meta">
+                            <span>2023</span>
+                            <span>1h 55m</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Movie" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Desert Dreams</h3>
+                        <div class="card-meta">
+                            <span>2022</span>
+                            <span>1h 50m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>SahuFlix</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Browse</h4>
+                    <ul class="footer-links">
+                        <li><a href="browse.html">All Titles</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">Documentaries</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Help Center</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Plans & Pricing</a></li>
+                        <li><a href="#">Supported Devices</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <p>Follow us on social media for the latest updates and content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 SahuFlix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Video player elements
+        const video = document.getElementById('main-video');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const playBtn = document.getElementById('playBtn');
+        const rewindBtn = document.getElementById('rewindBtn');
+        const forwardBtn = document.getElementById('forwardBtn');
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+        const progressBar = document.getElementById('progressBar');
+        const progressContainer = document.getElementById('progressContainer');
+        const timeDisplay = document.getElementById('timeDisplay');
+        const volumeBtn = document.getElementById('volumeBtn');
+        const volumeSlider = document.getElementById('volumeSlider');
+        const volumeLevel = document.getElementById('volumeLevel');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Format time for display (MM:SS)
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = Math.floor(seconds % 60);
+            return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+        }
+
+        // Update time display
+        function updateTimeDisplay() {
+            timeDisplay.textContent = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`;
+        }
+
+        // Update progress bar
+        function updateProgressBar() {
+            const percent = (video.currentTime / video.duration) * 100;
+            progressBar.style.width = `${percent}%`;
+            updateTimeDisplay();
+        }
+
+        // Play/Pause toggle
+        function togglePlayPause() {
+            if (video.paused) {
+                video.play();
+                playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                playBtn.innerHTML = '<i class="fas fa-pause"></i> Pause';
+            } else {
+                video.pause();
+                playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+                playBtn.innerHTML = '<i class="fas fa-play"></i> Play';
+            }
+        }
+
+        // Event listeners for play/pause
+        playPauseBtn.addEventListener('click', togglePlayPause);
+        playBtn.addEventListener('click', togglePlayPause);
+        video.addEventListener('click', togglePlayPause);
+
+        // Rewind and forward
+        rewindBtn.addEventListener('click', () => {
+            video.currentTime = Math.max(0, video.currentTime - 10);
+        });
+
+        forwardBtn.addEventListener('click', () => {
+            video.currentTime = Math.min(video.duration, video.currentTime + 10);
+        });
+
+        // Fullscreen toggle
+        fullscreenBtn.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if (video.mozRequestFullScreen) {
+                    video.mozRequestFullScreen();
+                } else if (video.webkitRequestFullscreen) {
+                    video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) {
+                    video.msRequestFullscreen();
+                }
+                fullscreenBtn.innerHTML = '<i class="fas fa-compress"></i>';
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+                fullscreenBtn.innerHTML = '<i class="fas fa-expand"></i>';
+            }
+        });
+
+        // Progress bar click to seek
+        progressContainer.addEventListener('click', (e) => {
+            const rect = progressContainer.getBoundingClientRect();
+            const pos = (e.clientX - rect.left) / rect.width;
+            video.currentTime = pos * video.duration;
+        });
+
+        // Volume control
+        let isMuted = false;
+        let lastVolume = 1;
+
+        volumeBtn.addEventListener('click', () => {
+            if (isMuted) {
+                video.volume = lastVolume;
+                volumeLevel.style.width = `${lastVolume * 100}%`;
+                volumeBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+                isMuted = false;
+            } else {
+                lastVolume = video.volume;
+                video.volume = 0;
+                volumeLevel.style.width = '0%';
+                volumeBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                isMuted = true;
+            }
+        });
+
+        volumeSlider.addEventListener('click', (e) => {
+            const rect = volumeSlider.getBoundingClientRect();
+            const pos = (e.clientX - rect.left) / rect.width;
+            const volume = Math.min(1, Math.max(0, pos));
+            video.volume = volume;
+            volumeLevel.style.width = `${volume * 100}%`;
+            
+            if (volume > 0) {
+                volumeBtn.innerHTML = volume > 0.5 ? 
+                    '<i class="fas fa-volume-up"></i>' : 
+                    '<i class="fas fa-volume-down"></i>';
+                isMuted = false;
+            } else {
+                volumeBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                isMuted = true;
+            }
+        });
+
+        // Loading indicator
+        video.addEventListener('waiting', () => {
+            loadingIndicator.style.display = 'block';
+        });
+
+        video.addEventListener('playing', () => {
+            loadingIndicator.style.display = 'none';
+        });
+
+        // Update time and progress
+        video.addEventListener('timeupdate', updateProgressBar);
+        video.addEventListener('loadedmetadata', () => {
+            updateTimeDisplay();
+        });
+
+        // Video ended event
+        video.addEventListener('ended', () => {
+            playPauseBtn.innerHTML = '<i class="fas fa-redo"></i>';
+            playBtn.innerHTML = '<i class="fas fa-redo"></i> Replay';
+        });
+
+        // Initialize video volume
+        video.volume = 0.8;
+    </script>
+</body>
+</html>
